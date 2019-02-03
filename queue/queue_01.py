@@ -43,6 +43,8 @@ class ArrayQueue(object):
 		self._data[self._front] = None
 		self._front = (self._front + 1) % len(self._data)
 		self._size -= 1
+		if 0 < self._size < len(self._data) // 4: # Shrinking the underlying array
+			self._resize(len(self._data) // 2)
 		return answer
 
 
