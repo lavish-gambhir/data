@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="749ce92e-79b7-4a84-b4dc-c187eaa93b14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/linked list/singly_list_queue.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linked list/circular_linked_list" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,16 +26,25 @@
         <entry file="file://$PROJECT_DIR$/linked list/singly_list_stack.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="640">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/linked list/singly_list_queue.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/linked list/singly_list_queue.py">
+        <entry file="file://$PROJECT_DIR$/linked list/circular_linked_list">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="637">
-              <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
+            <state relative-caret-position="557">
+              <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
             </state>
           </provider>
         </entry>
@@ -67,13 +76,14 @@
         <option value="$PROJECT_DIR$/linked list/singly_list.py" />
         <option value="$PROJECT_DIR$/linked list/singly_list_stack.py" />
         <option value="$PROJECT_DIR$/linked list/singly_list_queue.py" />
+        <option value="$PROJECT_DIR$/linked list/circular_linked_list" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="16" />
+    <option name="x" value="18" />
     <option name="y" value="23" />
-    <option name="width" value="1424" />
+    <option name="width" value="1422" />
     <option name="height" value="819" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -170,7 +180,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="593" y="23" width="847" height="819" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="819" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24939467" />
@@ -206,14 +216,21 @@
     <entry file="file://$PROJECT_DIR$/linked list/singly_list_stack.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="640">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/linked list/singly_list_queue.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
+        <state relative-caret-position="348">
+          <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/linked list/circular_linked_list">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
         </state>
       </provider>
     </entry>
