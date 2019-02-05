@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="749ce92e-79b7-4a84-b4dc-c187eaa93b14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/linked list/doubly_base_linked_list.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linked list/linked_list_deque.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,11 +49,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/linked list/doubly_base_linked_list.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="43" column="36" lean-forward="true" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+            <state relative-caret-position="40">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/linked list/linked_list_deque.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="637">
+              <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+              <folding>
+                <element signature="e#34#87#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,13 +99,14 @@
         <option value="$PROJECT_DIR$/linked list/singly_list_queue.py" />
         <option value="$PROJECT_DIR$/linked list/circular_linked_list" />
         <option value="$PROJECT_DIR$/linked list/doubly_base_linked_list.py" />
+        <option value="$PROJECT_DIR$/linked list/linked_list_deque.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="547" />
+    <option name="x" value="576" />
     <option name="y" value="23" />
-    <option name="width" value="893" />
+    <option name="width" value="864" />
     <option name="height" value="819" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -148,7 +161,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.linked_list_deque">
+    <configuration name="linked_list_deque" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="data" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/linked list" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/linked list/linked_list_deque.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="queue_01" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="data" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -172,6 +206,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.linked_list_deque" />
         <item itemvalue="Python.queue_01" />
       </list>
     </recent_temporary>
@@ -190,10 +225,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="547" y="23" width="893" height="819" extended-state="0" />
+    <frame x="576" y="23" width="864" height="819" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.15940367" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.20718816" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -246,8 +281,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/linked list/doubly_base_linked_list.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="43" column="36" lean-forward="true" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+        <state relative-caret-position="40">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/linked list/linked_list_deque.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="637">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+          <folding>
+            <element signature="e#34#87#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
