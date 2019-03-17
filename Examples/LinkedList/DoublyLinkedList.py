@@ -23,7 +23,7 @@ class SLinkedList():
                 self.insert_at_end(new_node)
             elif num == 3:
                 val = int(input("Enter value to insert node before it :"))
-                self.insert_at_mid(new_node, val)
+                self.search_and_insert(new_node, val)
             else:
                 assert False,"Wrong Input"
 
@@ -33,7 +33,7 @@ class SLinkedList():
         self.head.nexval = temp
         temp.preval = self.head
 
-    def insert_at_mid(self,node_data,value):
+    def search_and_insert(self,node_data,value):
         current_node= self.head
         flag = 0
         count = 0
@@ -88,7 +88,7 @@ class SLinkedList():
         current_node.nexval = node_data
         node_data.preval = current_node
 
-    def travering_forward(self):
+    def traversing_forward(self):
         if self.head is None:
             print("Linked List Empty")
         else:
@@ -98,7 +98,7 @@ class SLinkedList():
                 current_node = current_node.nexval
             print("--------------------------------------------")
 
-    def traverisng_backward(self):
+    def traversing_backward(self):
         if self.head is None:
             print("Linked List is Empty")
         else:
@@ -117,12 +117,12 @@ for i in range(num):
     print("Enter",i+1,"Element: ")
     ele = int(input())
     h.append(ele)
-h.travering_forward()
-h.traverisng_backward()
+h.traversing_forward()
+h.traversing_backward()
 
 print("Want to Perform delete operation Y/N? :")
 query = input().lower()[0]
 if query == 'y':
     h.delete_element()
-    h.travering_forward()
-    h.traverisng_backward()
+    h.traversing_forward()
+    h.traversing_backward()
