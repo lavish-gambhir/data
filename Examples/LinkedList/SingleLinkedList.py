@@ -1,68 +1,100 @@
+# Shivam Goyal 16-3-19
+
 class Node(object):
-    def __init__(self, data=None, nextval=None):
+    def __init__(self, data=None, nexval=None):
         self.data = data
-        self.nextval = nextval
+        self.nexval = nexval
 
 
-class SLinked(object):
+class SLinkedList(object):
     def __init__(self, head=None):
         self.head = head
 
-    def traversing(self):
+    def append(self, node_data):
+        new_node = Node(data=node_data)
         if self.head is None:
-            print("No point to the Next element")
+            self.head = new_node
         else:
-            current_node = self.head
-            while current_node is not None:
-                print("Value is :",current_node.data)
-                current_node = current_node.nextval
-            print("----------------------------------")
+            num = int(input("Insert at Beg Press-1, Insert at Mid Press-2, Insert at End Press-3 : "))
+            if num == 1:
+                self.insert_at_beg(new_node)
+            elif num == 2:
+                val = int(input("Enter value to insert node before it : "))
+                self.insert_at_mid(new_node, val)
+            elif num == 3:
+                self.insert_at_end(new_node)
+            else:
+                print("Wrong Input")
+                assert False
 
-    def insertion_at_begin(self,node):
-        if self.head is None:
-            self.head = node
-        else:
-            temp = self.head
-            self.head= node
-            node.nextval = temp
+    def insert_at_beg(self, new_node):
+        temp = self.head
+        self.head = new_node
+        new_node.nexval = temp
 
-    def insertion_at_end(self,node):
+    def insert_at_mid(self, new_node, val):
         current_node = self.head
-        if current_node is None:
-            print("No Elements in the list")
+        prev_node = None
+        flag, count = 0, 0
+        while current_node is not None:
+            count += 1
+            if current_node.data == val:
+                flag = 1
+                break
+            else:
+                prev_node = current_node
+                current_node = current_node.nexval
+        if flag == 1:
+            if count == 1:
+                self.insert_at_beg(new_node)
+            else:
+                prev_node.nexval = new_node
+                new_node.nexval = current_node
         else:
-            while current_node.nextval is not None:
-                current_node = current_node.nextval
-            current_node.nextval = node
+            assert False,"No Matching Found"
 
-    def insert_in_mid(self,ins_node,comp_node):
-        current_node= self.head
-        prev = None
-        if current_node is None:
-            print("List is Empty")
-        while current_node.data != comp_node.data:
-            prev = current_node
-            current_node = current_node.nextval
-        prev.nextval = ins_node
-        ins_node.nextval = current_node
+    def insert_at_end(self, new_node):
+        current_node = self.head
+        while current_node.nexval is not None:
+            current_node = current_node.nexval
+        current_node.nexval = new_node
+
+    def traversing(self):
+        current_node = self.head
+        while current_node is not None:
+            print("Value is :",current_node.data)
+            current_node = current_node.nexval
+
+    def delete_elem(self):
+        current_node = self.head
+        prev_node,count,flag=0,0,0
+        comp_val = int(input("Enter Element you want to delete: "))
+        while current_node is not None:
+            count+=1
+            if current_node.data == comp_val:
+                flag=1
+                break
+            else:
+                prev_node = current_node
+                current_node = current_node.nexval
+
+        if flag==1:
+            if count == 1:
+                self.head = current_node.nexval
+            else:
+                prev_node.nexval = current_node.nexval
+        else:
+            assert False,"No element Found to Delete"
 
 
 
-n1 = Node(1)
-n2 = Node(3)
-n3 = Node(5)
-n4 = Node(0)
-n5 = Node(7)
-n6 = Node(4)
-
-h = SLinked(n1)
-n1.nextval = n2
-n2.nextval = n3
-
+h = SLinkedList()
+num = int(input("Enter Number of Elemnets:"))
+for i in range(num):
+    print("Enter",i+1,"Element: ")
+    h.append(int(input()))
 h.traversing()
-h.insertion_at_begin(n4)
-h.traversing()
-h.insertion_at_end(n5)
-h.traversing()
-h.insert_in_mid(n6,n3)
+query = input("Want to perform delete Operation Y/N : ").lower()[0]
+if query == 'y':
+    h.delete_elem()
 h.traversing()
